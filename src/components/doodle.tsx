@@ -1,0 +1,3 @@
+export function Doodle({ className = "", happy = false }: { className?: string; happy?: boolean }) {
+  return <svg className={className} viewBox="0 0 80 80" fill="none" aria-hidden="true"><path d="M27 27C17 12 28 7 37 23C40 4 53 8 48 26C65 13 73 25 56 34C77 36 74 51 55 48C68 64 55 73 45 56C42 76 29 73 32 55C15 67 7 55 25 45C5 40 10 26 27 32Z" fill="currentColor" stroke="currentColor" strokeWidth="3" strokeLinejoin="round"/><path d="M32 35L32 39M45 34L45 38" className="doodle-face" strokeWidth="3.5" strokeLinecap="round"/><path d={happy ? "M32 46Q40 58 48 45" : "M34 46Q40 51 46 45"} className="doodle-face" strokeWidth="2.5" strokeLinecap="round"/></svg>;
+}
