@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { ArrowDown, ArrowLeft, ArrowRight, ArrowUp, Check, Gamepad2, RotateCcw, Sparkles, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Doodle } from "./doodle";
+import { StickMan } from "./stickman";
 import { clampPosition, isSparkCollected, SPARK_COUNT } from "@/lib/game";
 
 export function Playground() {
