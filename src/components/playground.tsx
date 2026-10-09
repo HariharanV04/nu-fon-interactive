@@ -55,7 +55,7 @@ export function Playground() {
   return <>
     {active && <div className="game-layer" aria-label="Doodle playground">
       {spots.map((p,i)=> !collected.includes(i) && <div key={i} className="game-spark" style={{left:p.x,top:p.y}}><Sparkles size={23}/></div>)}
-      <div ref={playerRef} className="game-player" data-testid="player"><Doodle happy={won}/></div>
+      <div ref={playerRef} className="game-player" data-testid="player"><StickMan happy={won}/></div>
     </div>}
     <aside className={`play-dock ${active ? "playing" : ""}`} data-game-controls>
       <div className="dock-logo"><Doodle happy={won}/></div>
